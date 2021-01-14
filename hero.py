@@ -14,7 +14,7 @@ class Hero(pygame.sprite.Sprite):
         self.image_bullet = image_bullet
         self.rect_bullet = self.image.get_rect()
 
-    def update(self):
+    def update(self, *args):
         vx = 0
         vy = 0
         if self.health <= 0:
